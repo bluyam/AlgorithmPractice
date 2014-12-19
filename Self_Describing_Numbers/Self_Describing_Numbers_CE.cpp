@@ -8,12 +8,9 @@
 #include <algorithm> //needed for count
 using namespace std; //prevents us from having to use std::x for standard library members
 
-int main() {
-    string current=""; //stores current number
-    string ifilename; //input file name
-    cout << "Enter the name of your input file: ";
-    cin >> ifilename;
-    ifstream input(ifilename); //input stream from file name
+int main(int argc, char *argv[]) {
+    string current=""; //current line
+    ifstream input(argv[1]); //input file name format for CodeEval
     if(!input) { //file name error checking
         cout << "Invalid input file name. Please run the program once more and try again.\n";
         exit(1);
