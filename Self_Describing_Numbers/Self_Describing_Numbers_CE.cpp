@@ -34,4 +34,5 @@ int main() {
             if(isSDN) cout << "1\n"; 
             else cout << "0\n";
     }
+    return 0;
 }
