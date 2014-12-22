@@ -4,4 +4,4 @@ CodeEval
 CodeEval Challenge Projects:
 
 Easy:
-Self Describing Numbers
+  Self Describing Numbers
