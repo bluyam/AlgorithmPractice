@@ -1,6 +1,4 @@
-CodeEval Challenge Projects
+Algorithm Practice Problems
 ========
 
-Easy:
-  
-Self Describing Numbers
+Solutions to problems from HackerRank and CodeEval
