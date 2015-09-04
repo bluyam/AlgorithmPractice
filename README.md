@@ -1,4 +1,4 @@
 Algorithm Practice Problems
 ========
 
-Solutions to problems from HackerRank and CodeEval
+Instructions and solutions for practice problems from HackerRank and CodeEval
