@@ -1,19 +1,23 @@
 import sys
 
-def isSixDigitPalindrome(n):
-    if n//1000 == (n%10)*99 + (n%100) + ((n%1000)-(n%100))//100:
-        return True
-    else:
-        return False
-
-print(isSixDigitPalindrome(100001))
-
-
-list = {}
-# for n in range (input/1000, 100, -1)
-# palindrome from n = n*1000 + (n%10)*99 + (n%100) + (n//100)
+def isProdOfThree(p):
+    for f in range(100, 1000):
+        if p % f == 0 and p // f < 1000 and p // f > 99:
+            return True
+            break
+    return False
 
 for line in sys.stdin.readlines()[1:]:
+    palindromes = []
     n = int(line.split("\n")[0])
-
-def switch(x):
+    prefix = n//1000
+    if n <= (prefix*1000 + (prefix%10)*99 + (prefix%100) + (prefix//100)):
+        limit = n//1000
+    else:
+        limit = n//1000 + 1
+    for half in reversed(range(100, limit)):
+        palindromes.append(half*1000 + (half%10)*99 + (half%100) + (half//100))
+    for p in palindromes:
+        if isProdOfThree(p):
+            print(p)
+            break
