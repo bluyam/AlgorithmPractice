@@ -40,25 +40,25 @@ int main(){
         for (int j = i+1; j < A.size()-1; j++) {
             // third side loop k: j+1->n and/or while A[k] < A[i]+A[j]
             for (int k = j+1; (k < A.size() && A[k] < A[i]+A[j]); k++) {
-                cout << "A[i]: " << A[i] << ", A[j]: " << A[j] << ", A[k]: " << A[k];
+                // cout << "A[i]: " << A[i] << ", A[j]: " << A[j] << ", A[k]: " << A[k];
                 // if acute, acute_count++
                 if (A[i]*A[i] + A[j]*A[j] > A[k]*A[k]) {
                   acute_count++;
-                  cout << ": acute" << endl;
+                  // cout << ": acute" << endl;
                 }
                 // else if right, right_count++
                 else if (A[i]*A[i] + A[j]*A[j] == A[k]*A[k]) {
                   right_count++;
-                  cout << ": right" << endl;
+                  // cout << ": right" << endl;
                 }
                 // else acute, obtuse_count++
-                else { 
+                else {
                   obtuse_count++;
-                  cout << ": obtuse" << endl;
+                  // cout << ": obtuse" << endl;
                 }
             }
         }
     }
-    cout << acute_count << " " << right_count << " " << obtuse_count;
+    cout << acute_count << " " << right_count << " " << obtuse_count << endl;
     return 0;
 }
