@@ -32,7 +32,7 @@ def merge(L,R):
 				break
 		else:	
 			result.append(R[j])
-			j += 1
+			j += 1x
 			if j >= n_r:
 				result.extend(L[i:])
 				break
